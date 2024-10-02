@@ -5,7 +5,7 @@ const listaDeCompras = document.getElementById("lista-de-compras");
 botaoSalvarItem.addEventListener("click", adicionarItem);
 
 function adicionarItem(evento) {
-  evento.preventDefault()
+  evento.preventDefault();
 
   const itemDaLista = document.createElement("li");
   const containerItemLista = document.createElement("div");
@@ -13,7 +13,7 @@ function adicionarItem(evento) {
 
   const containerNomeDoItem = document.createElement("div");
   const nomeDoItem = document.createElement("p");
-  nomeDoItem.innerText = item.ariaValueMax;
+  nomeDoItem.innerText = item.value;
   containerNomeDoItem.appendChild(nomeDoItem);
 
   const containerBotoes = document.createElement("div");
