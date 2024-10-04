@@ -32,7 +32,7 @@ function adicionarItem(evento) {
       if (checkboxInput.checked) {
           checkboxCustomizado.classList.add("checked");
       } else{
-        checkboxCustomizado.classList.remove("checked")
+        checkboxCustomizado.classList.remove("checked");
       }
   });
 
@@ -43,7 +43,6 @@ function adicionarItem(evento) {
   checkboxLabel.appendChild(checkboxCustomizado);
 
   containerCheckbox.appendChild(checkboxLabel);
-
   containerNomeDoItem.appendChild(containerCheckbox);
 
   const nomeDoItem = document.createElement("p");
