@@ -2,7 +2,6 @@ const item = document.getElementById("input-item");
 const botaoSalvarItem = document.getElementById("adicionar-item");
 const listaDeCompras = document.getElementById("lista-de-compras");
 let contador = 0;
-
 botaoSalvarItem.addEventListener("click", adicionarItem);
 
 function adicionarItem(evento) {
