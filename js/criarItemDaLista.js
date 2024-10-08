@@ -1,13 +1,8 @@
-const item = document.getElementById("input-item");
-const botaoSalvarItem = document.getElementById("adicionar-item");
-const listaDeCompras = document.getElementById("lista-de-compras");
+import { verificarListaComprados } from "./verificarListaComprados.js";
+
 const listaComprados = document.getElementById("lista-comprados");
 let contador = 0;
-botaoSalvarItem.addEventListener("click", adicionarItem);
-
-function adicionarItem(evento) {
-  evento.preventDefault();
-
+export function criarItemDaLista(item) {
   const itemDaLista = document.createElement("li");
   const containerItemLista = document.createElement("div");
   containerItemLista.classList.add("lista-item-container");
@@ -42,6 +37,8 @@ function adicionarItem(evento) {
       itemTitulo.style.textDecoration = "none";
       listaDeCompras.appendChild(itemDaLista);
     }
+
+    verificarListaComprados(listaComprados);
   });
 
   const checkboxCustomizado = document.createElement("div");
@@ -55,7 +52,7 @@ function adicionarItem(evento) {
 
   const nomeDoItem = document.createElement("p");
   nomeDoItem.id = "item-titulo";
-  nomeDoItem.innerText = item.value;
+  nomeDoItem.innerText = item;
   containerNomeDoItem.appendChild(nomeDoItem);
 
   const containerBotoes = document.createElement("div");
@@ -93,5 +90,6 @@ function adicionarItem(evento) {
 
   itemDaLista.appendChild(containerItemLista);
   itemDaLista.appendChild(itemData);
-  listaDeCompras.appendChild(itemDaLista);
+
+  return itemDaLista;
 }
