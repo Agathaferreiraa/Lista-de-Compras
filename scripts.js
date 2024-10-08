@@ -1,6 +1,7 @@
 const item = document.getElementById("input-item");
 const botaoSalvarItem = document.getElementById("adicionar-item");
 const listaDeCompras = document.getElementById("lista-de-compras");
+const listaComprados = document.getElementById("lista-comprados");
 let contador = 0;
 botaoSalvarItem.addEventListener("click", adicionarItem);
 
@@ -16,7 +17,7 @@ function adicionarItem(evento) {
   const containerCheckbox = document.createElement("div");
   containerCheckbox.classList.add("container-checkbox");
 
-  const checkboxInput = document.createElement("Input");
+  const checkboxInput = document.createElement("input");
   checkboxInput.type = "checkbox";
   checkboxInput.classList.add("input-checkbox");
   checkboxInput.id = "checkbox-" + contador++;
@@ -25,14 +26,22 @@ function adicionarItem(evento) {
   checkboxLabel.setAttribute("for", checkboxInput.id);
 
   checkboxLabel.addEventListener("click", function (evento) {
-      const checkboxInput = evento.currentTarget.querySelector(".input-checkbox");
-      const checkboxCustomizado = evento.currentTarget.querySelector(".checkbox-customizado");
-
-      if (checkboxInput.checked) {
-          checkboxCustomizado.classList.add("checked");
-      } else{
-        checkboxCustomizado.classList.remove("checked");
-      }
+    const checkboxInput = evento.currentTarget.querySelector(".input-checkbox");
+    const checkboxCustomizado = evento.currentTarget.querySelector(
+      ".checkbox-customizado"
+    );
+    const itemTitulo = evento.currentTarget
+      .closest("li")
+      .querySelector("#item-titulo");
+    if (checkboxInput.checked) {
+      checkboxCustomizado.classList.add("checked");
+      itemTitulo.style.textDecoration = "line-through";
+      listaComprados.appendChild(itemDaLista);
+    } else {
+      checkboxCustomizado.classList.remove("checked");
+      itemTitulo.style.textDecoration = "none";
+      listaDeCompras.appendChild(itemDaLista);
+    }
   });
 
   const checkboxCustomizado = document.createElement("div");
@@ -45,6 +54,7 @@ function adicionarItem(evento) {
   containerNomeDoItem.appendChild(containerCheckbox);
 
   const nomeDoItem = document.createElement("p");
+  nomeDoItem.id = "item-titulo";
   nomeDoItem.innerText = item.value;
   containerNomeDoItem.appendChild(nomeDoItem);
 
@@ -71,6 +81,17 @@ function adicionarItem(evento) {
 
   containerItemLista.appendChild(containerNomeDoItem);
   containerItemLista.appendChild(containerBotoes);
+
+  const itemData = document.createElement("p");
+  itemData.innerText = `${new Date().toLocaleDateString("pt-BR", {
+    weekday: "long",
+  })} (${new Date().toLocaleDateString()}) às ${new Date().toLocaleTimeString(
+    "pt-BR",
+    { hour: "numeric", minute: "numeric" }
+  )}`;
+  itemData.classList.add("texto-data");
+
   itemDaLista.appendChild(containerItemLista);
+  itemDaLista.appendChild(itemData);
   listaDeCompras.appendChild(itemDaLista);
 }
