@@ -15,11 +15,11 @@ Uma aplicação web simples e interativa para gerenciar sua lista de compras. Es
 - **Edição e Exclusão**: Itens podem ser editados ou removidos da lista conforme necessário.
 - **Mensagem de Lista Vazia**: Exibe uma mensagem amigável quando a lista está vazia.
 
-![Captura de tela] (C:\Users\x516878\Pictures\Screenshots\Captura de tela 2024-10-03 143946.png)
+![image](\Pictures\Screenshots\Captura de tela 2024-10-03 143946.png)
 
 ## 🔗 Link para o Projeto
 
-[Lista de Compras](link-para-seu-projeto) 
+[Lista de Compras](link-para-seu-projeto)
 
 ## 📚 Aprendizados
 
