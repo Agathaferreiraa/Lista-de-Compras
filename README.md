@@ -2,6 +2,12 @@
 
 Uma aplicação web simples e interativa para gerenciar sua lista de compras. Este projeto foi desenvolvido como parte do meu aprendizado em JavaScript e manipulação do DOM no curso da Alura.
 
+
+![image](https://github.com/user-attachments/assets/804b0565-7b24-4655-92d2-d867ea3e1204)
+
+
+
+
 ## 📦 Tecnologias Utilizadas
 
 - **HTML**: Estrutura da aplicação
@@ -31,3 +37,6 @@ Este projeto me permitiu aplicar e consolidar os conceitos que aprendi sobre:
 ## Contribuições
 
 Sinta-se à vontade para contribuir com melhorias e sugestões! Crie uma issue ou envie um pull request.
+
+---
+*Siga-me no LinkedIn para mais atualizações sobre meus projetos:** [Meu LinkedIn](https://www.linkedin.com/in/%C3%A1gatha-ferreira-de-siqueira-6993912b2/)
