@@ -39,4 +39,4 @@ Este projeto me permitiu aplicar e consolidar os conceitos que aprendi sobre:
 Sinta-se à vontade para contribuir com melhorias e sugestões! Crie uma issue ou envie um pull request.
 
 ---
-*Siga-me no LinkedIn para mais atualizações sobre meus projetos:** [Meu LinkedIn](https://www.linkedin.com/in/%C3%A1gatha-ferreira-de-siqueira-6993912b2/)
+*Siga-me no LinkedIn para mais atualizações sobre meus projetos:* [Meu LinkedIn](https://www.linkedin.com/in/%C3%A1gatha-ferreira-de-siqueira-6993912b2/)
