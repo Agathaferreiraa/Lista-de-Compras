@@ -1,5 +1,6 @@
+import { excluirItem   } from "./excluirItem.js";
 import { verificarListaComprados } from "./verificarListaComprados.js";
-
+const listaDeCompras = document.getElementById("lista-de-compras");
 const listaComprados = document.getElementById("lista-comprados");
 let contador = 0;
 export function criarItemDaLista(item) {
@@ -58,6 +59,10 @@ export function criarItemDaLista(item) {
   const containerBotoes = document.createElement("div");
   const botaoRemover = document.createElement("button");
   botaoRemover.classList.add("item-lista-button");
+
+  botaoRemover.addEventListener("click", function () {
+    excluirItem(itemDaLista);
+  })
 
   const imagemRemover = document.createElement("img");
   imagemRemover.src = "img/delete.svg";
