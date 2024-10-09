@@ -15,11 +15,11 @@ Uma aplicação web simples e interativa para gerenciar sua lista de compras. Es
 - **Edição e Exclusão**: Itens podem ser editados ou removidos da lista conforme necessário.
 - **Mensagem de Lista Vazia**: Exibe uma mensagem amigável quando a lista está vazia.
 
-![image](\Pictures\Screenshots\Captura de tela 2024-10-03 143946.png)
+![image](c:\Users\x516878\Downloads\listadecompra.png)
 
 ## 🔗 Link para o Projeto
 
-[Lista de Compras](link-para-seu-projeto)
+[Lista de Compras](https://lista-de-compras-cyan.vercel.app/)
 
 ## 📚 Aprendizados
 
